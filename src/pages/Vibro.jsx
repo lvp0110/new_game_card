@@ -105,7 +105,7 @@ export default function Vibro() {
 
   return (
     <div style={{ width: 720, padding: 16 }}>
-      {loading && <p>Загрузка....</p>}
+      {loading && <p>Загрузка.....</p>}
       {error && <p style={{ color: "crimson" }}>Ошибка: {error}</p>}
 
       {!loading && !error && (
