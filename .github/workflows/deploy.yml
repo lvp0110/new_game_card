@@ -1,12 +1,14 @@
 name: Deploy Vite to GitHub Pages
 on:
   push:
-    branches: [ master ]
+    branches: [ master ]   # или main — подставьте вашу основную ветку
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
