@@ -1,7 +1,9 @@
 name: Deploy Vite to GitHub Pages
 on:
   push:
-    branches: [ master ]   # или main — подставьте вашу основную ветку
+    branches:
+      - master
+      - main
   workflow_dispatch:
 
 permissions:
